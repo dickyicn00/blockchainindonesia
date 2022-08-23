@@ -1,0 +1,885 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/tippy.js@6/animations/scale.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/tippy.js@6.3.7/themes/light.css"
+  />
+  <link href="./assets/css/style.css" rel="stylesheet">
+  <link href="./assets/css/box-org.css" rel="stylesheet">
+  <link href="./assets/css/button.css" rel="stylesheet">
+  <link href="./assets/css/flexbin.css" rel="stylesheet">
+  <link href="https://unpkg.com/microtip/microtip.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/css/lightgallery-bundle.min.css" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
+  <link href="./assets/css/slider.css" rel="stylesheet">
+  <title>Blockchain Talent Indoneisa </title>
+</head>
+<body>
+  
+  <!-- Header  -->
+  <header id="header" class="md:py-[32px] bg-white transition duration-500 fixed w-full z-50	">
+    <div class="container mx-auto">
+      <nav class="flex justify-between items-center">
+        <div class="relative py-4 md:py-0 z-50 bg-white flex-grow flex justify-between items-center">
+          <img 
+            src="./assets/images/logo.svg" 
+            class="
+              w-[120px] md:w-[158px]
+            "
+            alt="logo" 
+          />
+          <button id="mobile-button" class="button-hamm inline-block md:hidden">
+            <span></span> 
+            <span></span> 
+            <span></span>
+          </button>
+        </div>
+        <div class="menu-wrapper" id="menu-wrapper">
+          <div 
+            class="
+              flex
+              flex-col md:flex-row
+              md:items-center  
+            "
+          >
+            <ul class="nav-menu" id="nav-menu">
+              <li class="nav-menu-item">
+                <a class="nav-menu-item-link" href="#about">About</a>
+              </li>
+              <li class="nav-menu-item">
+                <a class="nav-menu-item-link" href="#people">People</a>
+              </li>
+              <li class="nav-menu-item">
+                <a class="nav-menu-item-link" href="#how-does-this-work">How does it work</a>
+              </li>
+            </ul>
+            <a class="btn md:ml-[32px]" href="#">Book your talents now</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main  -->
+  <main class="pt-[100px] md:pt-[117px]">
+
+    <!-- Welcome section  -->
+    <section class="mb-[104px] pt-4">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <p data-aos="fade-up" data-aos-delay="100" data-aos-duration="700" class="font-medium text-gray-900 mb-2">The First Indonesian</p>
+            <h2 data-aos="fade-up" data-aos-delay="200" data-aos-duration="700" class="welcome-heading mb-2 break-words">BLOCKCHAIN TALENT PROVIDER</h2>
+            <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="700" class="text-gray-600 mb-6">Great talents in blockchain, crypto, NFT, and web3 industry are not active on LinkedIn or JobStreet. But we can help you to find them!</p>
+            <a data-aos="fade-up" data-aos-delay="400" data-aos-duration="700" href="#" class="btn btn-arrow">Book your talents here</a>
+            <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="700" class="mt-10">
+              <p class="font-medium text-gray-400 mb-4">Supported by</p>
+              <div class="bg-[#F2F4FB] p-4 md:px-[36px] md:py-[28px] rounded-[3px]">
+                <div class="grid grid-cols-3 items-center gap-4">
+                  <div><img src="./assets/images/support/1.png" alt="support" class="max-w-full mx-auto"></div>
+                  <div><img src="./assets/images/support/2.png" alt="support" class="max-w-full mx-auto"></div>
+                  <div><img src="./assets/images/support/3.png" alt="support" class="max-w-full mx-auto"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-10 md:mt-0">
+            <div
+              class="
+                relative
+                pt-[25%]
+                bg-[url('../images/shape/checker.svg')]
+                bg-no-repeat	
+                bg-center	
+              "
+              data-aos="fade-up" 
+              data-aos-delay="500" 
+              data-aos-duration="700"
+            >
+              <img 
+                src="./assets/images/shape/shape.svg" 
+                alt="welcome banner" 
+                class="max-w-full" 
+              />
+              <img 
+                src="./assets/images/shape/box-org.svg" 
+                alt="welcome banner" 
+                data-aos="fade-down" 
+                data-aos-delay="700" 
+                data-aos-duration="700"
+                class="
+                  b-animate 
+                  absolute
+                  max-w-full
+                  w-[20%]
+                  top-[32%]
+                  left-[6%]
+                " 
+              />
+              <img 
+                src="./assets/images/shape/box-org-2.svg" 
+                alt="welcome banner" 
+                data-aos="fade-down" 
+                data-aos-delay="800" 
+                data-aos-duration="700"
+                class="
+                  b-animate-2
+                  absolute
+                  max-w-full
+                  w-[40%]
+                  top-0
+                  left-[33%]
+                " 
+              />
+              <img 
+                src="./assets/images/shape/box-org-3.svg" 
+                alt="welcome banner" 
+                data-aos="fade-down" 
+                data-aos-delay="900" 
+                data-aos-duration="700"
+                class="
+                  b-animate-3
+                  absolute
+                  max-w-full
+                  w-[30%]
+                  top-[16%]
+                  left-[74%]
+                " 
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section class="lg:py-[84px] overflow-hidden" id="about">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-9 gap-0">
+          <div 
+            class="
+              col-span-12
+              md:col-span-4
+            "
+          >
+            <div class="relative">
+              <div
+                class="
+                  bg-[url('../images/background/bg-primary.jpg')]
+                  max-w-full
+                  w-[320px] md:w-[507px] 
+                  h-[428px] md:h-[628px] 
+                  rounded-tl-[184px] 
+                  rounded-tr-[40px] 
+                  rounded-br-[64px] 
+                  rounded-bl-[40px] 
+                  border-[20px] 
+                  border-white 
+                  shadow-about-card-primary
+                  relative
+                "
+                data-aos="fade-down" 
+                data-aos-duration="1000"
+              >
+                <img 
+                  src="./assets/images/icons/floating-code.svg" 
+                  alt="code" 
+                  class="
+                    absolute
+                    top-[-35px]
+                  "
+                  data-aos="fade-up-left" 
+                  data-aos-delay="1000" 
+                  data-aos-duration="700"
+                >
+                <img 
+                  src="./assets/images/about-primary.png" 
+                  alt="about" 
+                  class="
+                    max-w-none
+                    w-[131%]
+                    max-w-full  
+                    absolute
+                    bottom-[0px]
+                    right-[-50px]
+                  "
+                >
+              </div>
+              <div
+                class="
+                  w-[140px] md:w-[240px]
+                  h-[190px] md:h-[292px]
+                  border-[10px]
+                  border-white
+                  rounded-t-[104px]
+                  rounded-b-[16px]
+                  shadow-about-card-secondary
+                  bg-[url('../images/background/bg-secondary.jpg')]
+                  relative
+                  ml-auto
+                  mt-[-120px] md:mt-[-130px] lg:mt-[-215px]
+                  right-[-0px] md:right-[-155px]
+                "
+                data-aos="fade-right" 
+                data-aos-duration="1000"
+              >
+                <img 
+                  src="./assets/images/icons/floating-cursor.svg" 
+                  alt="code" 
+                  class="
+                    absolute
+                    bottom-[-20px]
+                    right-[-75px]
+                  "
+                >
+                <img 
+                  src="./assets/images/about-secondary.png" 
+                  alt="secondary"
+                  class="
+                    w-full
+                    max-w-full  
+                    absolute
+                    bottom-[0px]
+                    right-[-10px]
+                  "
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="
+              col-span-12
+              md:col-span-5
+            "
+          >
+            <div 
+              class="
+                w-full lg:w-[486px]
+                md:pl-5 lg:pl-10
+                pt-5 md:pt-0
+              "
+              data-aos="fade-up" 
+              data-aos-delay="100" 
+              data-aos-duration="700"
+            >
+              <h4 
+                class="font-extrabold text-[32px] mb-4"
+              >Why BlockchainTalent.id?</h4>
+              <div class="about-content-wrap text-xs">
+                <p>From building communities and media for crypto & blockchain ecosystem.</p>
+                <p>We realize there are a lot of passionate-untapped talents in various remote areas in Indonesia.</p>
+                <p>They are passionate undetected crypto-nerds with promising technical skills, and relatively affordable when compared to talents from abroad or Jabodetabek area. They don’t ask for much but an opportunity to grow and apply their skills and knowledge to make a real impact.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Where are they section  -->
+    <section 
+      class="
+        my-[40px] md:my-[84px]
+        relative
+        lg:pb-24
+      "
+    >
+      <div class="container mx-auto relative">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+          <div class="lg:col-span-5">
+            <div 
+              class="
+                lg:w-[486px]
+                md:px-5 lg:px-0
+              "
+              data-aos="fade-up" 
+              data-aos-duration="1000"
+            >
+              <h4 
+                class="font-extrabold text-[32px] mb-4"
+              >Where are they?</h4>
+              <div class="about-content-wrap">
+                <p>You can't find them on LinkedIn, because they are hidden in many crypto & NFT community groups. But they are passionate undetected crypto-nerds with promising technical skills, and relatively affordable when compared to talents from abroad or Jabodetabek area.</p>
+                <p>They don’t ask for much but an opportunity to grow and apply their skills and knowledge to make a real impact for web3 and blockchain industry.</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="mx-auto lg:absolute top-0 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+          <div class="lg:col-start-6 lg:col-span-7 ">
+            <div
+              class="
+                relative
+                lg:right-[-45px]
+                ml-auto
+                max-w-full
+                z-10
+              "
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div 
+                class="relative"
+              >
+                <img 
+                  src="./assets/images/map.png" 
+                  alt="Map"
+                  class="w-full" 
+                  srcset=""
+                >
+                <div
+                  class="
+                    absolute
+                    top-0
+                    w-full
+                    h-full
+                  "
+                >
+                  <span data-template="one" data-aos="fade-down" data-aos-delay="900" class="map-tooltip top-[8%] left-[5%]"></span>
+                  <span data-template="one" data-aos="fade-down" data-aos-delay="900" class="map-tooltip top-[30%] left-[6%]"></span>
+                  <span data-template="one" data-aos="fade-down" data-aos-delay="900" class="map-tooltip top-[28%] left-[12%]"></span>
+                  <span data-template="one" data-aos="fade-down" data-aos-delay="900" class="map-tooltip top-[31%] left-[12%]"></span>
+                  <span data-template="one" data-aos="fade-down" data-aos-delay="900" class="map-tooltip top-[33%] left-[11%]"></span>
+                  <span data-template="one" data-aos="fade-down" data-aos-delay="900" class="map-tooltip top-[47%] left-[13%]"></span>
+                  <span data-template="one" data-aos="fade-down" data-aos-delay="900" class="map-tooltip top-[70%] left-[15%]"></span>
+                  <span data-template="one" data-aos="fade-down" data-aos-delay="900" class="map-tooltip top-[71%] left-[17%]"></span>
+                  <span data-template="one" data-aos="fade-down" data-aos-delay="900" class="map-tooltip top-[72%] left-[18%]"></span>
+                  <span data-template="one" data-aos="fade-down" data-aos-delay="900" class="map-tooltip top-[73%] left-[21%]"></span>
+                  <span data-template="one" data-aos="fade-down" data-aos-delay="900" class="map-tooltip top-[74%] left-[22.5%]"></span>
+                  <span data-template="one" data-aos="fade-down" data-aos-delay="900" class="map-tooltip top-[76%] left-[26%]"></span>
+                  <span data-template="one" data-aos="fade-down" data-aos-delay="900" class="map-tooltip top-[71%] left-[27%]"></span>
+                  <span data-template="one" data-aos="fade-down" data-aos-delay="900" class="map-tooltip top-[74%] left-[28%]"></span>
+                  <span data-template="one" data-aos="fade-down" data-aos-delay="900" class="map-tooltip top-[78%] left-[35%]"></span>
+                  <span data-template="one" data-aos="fade-down" data-aos-delay="900" class="map-tooltip top-[79%] left-[47%]"></span>
+                  <span data-template="one" data-aos="fade-down" data-aos-delay="900" class="map-tooltip top-[41%] left-[51%]"></span>
+                  <span data-template="one" data-aos="fade-down" data-aos-delay="900" class="map-tooltip top-[56%] left-[54%]"></span>
+                  <span data-template="one" data-aos="fade-down" data-aos-delay="900" class="map-tooltip top-[32%] left-[35%]"></span>
+                  <span data-template="one" data-aos="fade-down" data-aos-delay="900" class="map-tooltip top-[27%] left-[36%]"></span>
+                  <span data-template="one" data-aos="fade-down" data-aos-delay="900" class="map-tooltip top-[30%] left-[37%]"></span>
+                  <span data-template="one" data-aos="fade-down" data-aos-delay="900" class="map-tooltip top-[25%] left-[64%]"></span>
+                  <span data-template="one" data-aos="fade-down" data-aos-delay="900" class="map-tooltip top-[45%] left-[90%]"></span>
+                </div>
+                <div style="display: none;">
+                  <div id="one">
+                    <div class="py-1">
+                      <img 
+                        src="https://images.unsplash.com/photo-1660580554695-d2ca5008f1f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80" 
+                        alt="item" 
+                        class="map-item-image"
+                        srcset=""
+                      >
+                    </div>
+                  </div>
+                  <div id="two">
+                    <strong>Content for `two`</strong>
+                  </div>
+                  <div id="three">
+                    <strong>Content for `three`</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- From developer section  -->
+    <section 
+      class="
+        my-[40px] md:my-[84px]
+      "
+      id="people"
+    >
+      <div 
+        class="
+          py-16 md:py-[80px]
+          bg-cover	
+          bg-[url('../images/background/bg-talents.jpg')]
+          relative
+        "
+      > 
+        <img 
+          src="./assets/images/shape/union-shape.svg" 
+          class="
+            absolute
+            bottom-[-45px]
+            left-[-195px]
+          "
+          data-aos="fade-right" 
+          data-aos-duration="1000"
+        />
+        <div class="container mx-auto">
+          <div class="text-center text-white mb-5">
+            <h4 
+              class="
+                font-extrabold 
+                text-[24px] md:text-[32px] text-white 
+                mb-2
+                max-w-full w-[754px]
+                mx-auto
+              "
+            >From developer to community manager who truly understand blockchain technology!</h4>
+            <p>We can provide various talents with a variety of technical skills who understand blockchain with in depth knowledge about web3 industry such as</p>
+          </div>
+          <div class="min-h-[400px] relative mt-10">
+            <img 
+              src="./assets/images/shape/box-dots.svg" 
+              class="
+                absolute
+                top-[-20px]
+                right-[-20px]
+              "
+              data-aos="fade-up" 
+              data-aos-duration="1000"
+            />
+            <div class="flexbin" id="developer-gallery">
+              <a href="assets/images/dev/1.png">
+                <img src="assets/images/dev/1.png" alt="gallery 1" >
+              </a>
+              <a href="assets/images/dev/2.png">
+                <img src="assets/images/dev/2.png" alt="gallery 2" />
+              </a>
+              <a href="assets/images/dev/3.png">
+                <img src="assets/images/dev/3.png" alt="gallery 3" />
+              </a>
+              <a href="assets/images/dev/4.png">
+                <img src="assets/images/dev/4.png" alt="gallery 4" />
+              </a>
+              <a href="assets/images/dev/5.png">
+                <img src="assets/images/dev/5.png" alt="gallery 5" />
+              </a>
+              <a href="assets/images/dev/6.png">
+                <img src="assets/images/dev/6.png" alt="gallery 6" />
+              </a>
+              <a href="assets/images/dev/7.png">
+                <img src="assets/images/dev/7.png" alt="gallery 7" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What do we offer section -->
+    <section class="my-10 md:my-[84px]">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="offer-item">
+            <h4 
+              class="font-extrabold text-[32px] mb-4"
+            >What do we offer?</h4>
+            <div class="about-content-wrap">
+              <p>Talents who are familiar with blockchain and web3 industry. Make them easier to adapt and contribute optimal with genuine passion for your business.</p>
+            </div>
+          </div>
+          <div 
+            class="offer-item"
+            data-aos="fade-up" 
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
+            <div class="offer-item-icon-wrap">
+              <img src="./assets/images/icons/cursor.svg" alt="cursor icon">
+            </div>
+            <h5 class="offer-item-title">Headhunting Talentes</h5>
+            <p class="offer-item-desc">From community & our talent pool.</p>
+          </div>
+          <div 
+            class="offer-item"
+            data-aos="fade-up" 
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
+            <div class="offer-item-icon-wrap">
+              <img src="./assets/images/icons/user.svg" alt="cursor icon">
+            </div>
+            <h5 class="offer-item-title">End-to-end recruitment progress</h5>
+            <p class="offer-item-desc">Let us do the dirty work from scouting to selection process for you</p>
+          </div>
+          <div 
+            class="offer-item"
+            data-aos="fade-up" 
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
+            <div class="offer-item-icon-wrap">
+              <img src="./assets/images/icons/user-boarding.svg" alt="cursor icon">
+            </div>
+            <h5 class="offer-item-title">Onboarding process</h5>
+            <p class="offer-item-desc">Save your time to coach your new employee about basic technical & industry knowledge. We'll make sure they are ready to work for you</p>
+          </div>
+          <div 
+            class="offer-item"
+            data-aos="fade-up" 
+            data-aos-duration="1000"
+            data-aos-delay="600"
+          >
+            <div class="offer-item-icon-wrap">
+              <img src="./assets/images/icons/warranty.svg" alt="cursor icon">
+            </div>
+            <h5 class="offer-item-title">6 Months Warranty</h5>
+            <p class="offer-item-desc">If the talents does not commit the contract, we will get you talent replacement for free</p>
+          </div>
+          <div 
+            class="offer-item"
+            data-aos="fade-up" 
+            data-aos-duration="1000"
+            data-aos-delay="700"
+          >
+            <div class="offer-item-icon-wrap">
+              <img src="./assets/images/icons/document.svg" alt="cursor icon">
+            </div>
+            <h5 class="offer-item-title">Training & Development</h5>
+            <p class="offer-item-desc">Especially for back-end web3 developer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How does this work  -->
+    <section
+      class="
+        pt-12 lg:pt-[168px]
+        pb-[100px] lg:pb-[260px]
+        bg-blue-50
+        relative
+        overflow-hidden
+      "
+      id="how-does-this-work"
+    >
+      <img 
+        src="./assets/images/shape/flow.svg"
+        alt="shape"
+        class="
+          absolute
+          bottom-0
+        "
+        data-aos="fade-right" 
+        data-aos-duration="1000"
+      >
+      <div class="mx-auto">
+        <div>
+          <h4 
+            class="font-extrabold text-center text-[32px] mb-8"
+          >How does this work</h4>
+        </div>
+        <div class="relative overflow-hidden">
+          <div class="section-with-carousel section-with-left-offset relative pl-5 md:pl-0">
+          <div class="container mx-auto relative">
+            <div class="carousel-wrapper">
+              <div class="swiper swiper-work">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div
+                      class="
+                        flex
+                        flex-col
+                      "
+                    >
+                      <div class="mb-4 w-[50px]">
+                        <span class="bg-blue-50 inline-block">
+                          <img 
+                            src="./assets/images/icons/dot-dashed.svg" 
+                            alt="icon-dot-dashed" 
+                            class="h-[20px]"
+                          />
+                        </span>
+                      </div>
+                      <div 
+                        class="card-work"
+                        
+                      >
+                        You gives us specific requirements for each desired positions.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="
+                        flex
+                        flex-col
+                      "
+                    >
+                      <div class="mb-4 w-[50px]">
+                        <span class="bg-blue-50 inline-block">
+                          <img 
+                            src="./assets/images/icons/dot-dashed.svg" 
+                            alt="icon-dot-dashed" 
+                            class="h-[20px]"
+                          />
+                        </span>
+                      </div>
+                      <div 
+                        class="card-work"
+                        
+                        data-aos-delay="200"
+                      >
+                        <span class="font-bold">Blockchain Talent. ID</span> starts the headhunting & selection process.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="
+                        flex
+                        flex-col
+                      "
+                    >
+                      <div class="mb-4 w-[50px]">
+                        <span class="bg-blue-50 inline-block">
+                          <img 
+                            src="./assets/images/icons/dot-dashed.svg" 
+                            alt="icon-dot-dashed" 
+                            class="h-[20px]"
+                          />
+                        </span>
+                      </div>
+                      <div 
+                        class="card-work"
+                        
+                        data-aos-delay="300"
+                      >
+                        <span class="font-bold">Blockchain Talent. ID</span> provides talents who can proceed to be interviewed.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="
+                        flex
+                        flex-col
+                      "
+                    >
+                      <div class="mb-4 w-[50px]">
+                        <span class="bg-blue-50 inline-block">
+                          <img 
+                            src="./assets/images/icons/dot-dashed.svg" 
+                            alt="icon-dot-dashed" 
+                            class="h-[20px]"
+                          />
+                        </span>
+                      </div>
+                      <div 
+                        class="card-work"
+                        
+                        data-aos-delay="400"
+                      >
+                        <span class="font-bold">Blockchain Talent. ID</span> manages the contract and administrative stuff.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="
+                        flex
+                        flex-col
+                      "
+                    >
+                      <div class="mb-4 w-[50px]">
+                        <span class="bg-blue-50 inline-block">
+                          <img 
+                            src="./assets/images/icons/dot-dashed.svg" 
+                            alt="icon-dot-dashed" 
+                            class="h-[20px]"
+                          />
+                        </span>
+                      </div>
+                      <div 
+                        class="card-work"
+                        
+                        data-aos-delay="400"
+                      >
+                        <span class="font-bold">Blockchain Talent. ID</span> manages the contract and administrative stuff.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="
+                        flex
+                        flex-col
+                      "
+                    >
+                      <div class="mb-4 w-[50px]">
+                        <span class="bg-blue-50 inline-block">
+                          <img 
+                            src="./assets/images/icons/dot-dashed.svg" 
+                            alt="icon-dot-dashed" 
+                            class="h-[20px]"
+                          />
+                        </span>
+                      </div>
+                      <div 
+                        class="card-work"
+                      >
+                        <span class="font-bold">Blockchain Talent. ID</span> manages the contract and administrative stuff.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="
+                        flex
+                        flex-col
+                      "
+                    >
+                      <div class="mb-4 w-[50px]">
+                        <span class="bg-blue-50 inline-block">
+                          <img 
+                            src="./assets/images/icons/dot-dashed.svg" 
+                            alt="icon-dot-dashed" 
+                            class="h-[20px]"
+                          />
+                        </span>
+                      </div>
+                      <div 
+                        class="card-work"
+                      >
+                        <span class="font-bold">Blockchain Talent. ID</span> manages the contract and administrative stuff.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div >
+              <div class="pagination-wrapper">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div
+          class="
+            relative
+            container
+            mx-auto
+          "
+        >
+          <img 
+            src="./assets/images/shape/circle.svg" 
+            alt="circle" 
+            class="
+              absolute
+              bottom-[-75px]
+              right-0
+            "
+            data-aos="fade-left" 
+            data-aos-duration="1000"
+          >
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer  -->
+  <footer>
+    <section class="py-[64px] text-center md:text-left">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+          <div 
+            class="col-span-4"
+            data-aos="fade-up" 
+            data-aos-duration="1000"
+          >
+            <img 
+              src="./assets/images/logo-secondary.svg" 
+              alt="secondary logo" 
+              class="max-w-full mx-auto md:ml-0 mb-4"
+            >
+            <p class="text-gray-600 text-sm">Great talents in blockchain, crypto, NFT, and web3 that we can help you to find them!</p>
+          </div>
+          <div 
+            class="col-span-4"
+            data-aos="fade-up" 
+            data-aos-delay="100"
+            data-aos-duration="1000"
+          >
+            <div class="md:pl-24">
+              <h6
+                class="
+                  mb-4
+                  font-semibold	
+                "
+              >Quick Link</h6>
+              <ul class="list-none">
+                <li class="quick-menu-item">
+                  <a href="#" class="quick-menu-link">About</a>
+                </li>
+                <li class="quick-menu-item">
+                  <a href="#" class="quick-menu-link">People</a>
+                </li>
+                <li class="quick-menu-item">
+                  <a href="#" class="quick-menu-link">How does it work</a>
+                </li>
+                <li class="quick-menu-item">
+                  <a href="#" class="quick-menu-link">Book Talents</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div 
+            class="col-span-4"
+            data-aos="fade-up" 
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            <div class="md:pl-18">
+              <h6
+                class="
+                  mb-4
+                  font-semibold	
+                "
+              >Find your criteria with us</h6>
+              <a href="#" class="btn btn-gradient btn-arrow">
+                Book your talents here
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="
+        border-t
+        border-[#E9F0FF]
+        py-4
+      "
+    >
+      <p 
+        class="
+          text-center
+          text-sm
+          text-gray-600
+        "
+      >&copy; Blockchaintalent.id 2022, All Rights Reserved</p>
+    </section>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/lightgallery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/plugins/zoom/lg-zoom.umd.min.js"></script>
+  <script src="https://unpkg.com/@sidsbrmnn/scrollspy@1.x/dist/scrollspy.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

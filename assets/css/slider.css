@@ -1,0 +1,221 @@
+
+/* MAIN STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.section-with-carousel .swiper-slide figure {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-with-carousel .swiper-slide img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.section-with-carousel .carousel-wrapper {
+  position: relative;
+
+}
+
+.section-with-carousel .carousel-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 9px;
+  background: url('../images/shape/line-dashed.svg');
+}
+
+/*  */
+.section-with-carousel .swiper-slide figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(20%);
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.4s;
+}
+
+.section-with-carousel .swiper-slide figcaption svg {
+  flex-shrink: 0;
+  fill: white;
+  margin-right: 10px;
+}
+
+.section-with-carousel .swiper-slide-active figcaption {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+.section-with-carousel .carousel-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12px;
+  z-index: 1;
+}
+
+.section-with-carousel .carousel-controls .carousel-control {
+  opacity: 0.25;
+  transition: opacity 0.3s;
+}
+
+.section-with-carousel .carousel-controls .carousel-control:hover {
+  opacity: 1;
+}
+
+.section-with-carousel .swiper-pagination-bullets {
+  position: static;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.section-with-carousel .swiper-pagination-bullets .swiper-pagination-bullet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  background: transparent;
+  opacity: 0.5;
+  margin: 0 8px;
+  border-radius: 0;
+  transition: opacity 0.3s;
+}
+
+.section-with-carousel
+  .swiper-pagination-bullets
+  .swiper-pagination-bullet
+  .line {
+  width: 3px;
+  height: 3px;
+  background: black;
+  transition: transform 0.3s;
+}
+
+.section-with-carousel
+  .swiper-pagination-bullets
+  .swiper-pagination-bullet
+  .number {
+  opacity: 0;
+  transform: translateY(-7px);
+  transition: all 0.3s;
+}
+
+.section-with-carousel
+  .swiper-pagination-bullets
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.section-with-carousel
+  .swiper-pagination-bullets
+  .swiper-pagination-bullet.swiper-pagination-bullet-active
+  .line {
+  transform: scaleX(8);
+}
+
+.section-with-carousel
+  .swiper-pagination-bullets
+  .swiper-pagination-bullet.swiper-pagination-bullet-active
+  .number {
+  opacity: 1;
+  transform: none;
+}
+`
+
+@media (min-width: 1200px) {
+
+  .section-with-carousel .carousel-controls {
+    padding: 0 50px;
+  }
+}
+
+.swiper-button-next, .swiper-button-prev {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  top: auto;
+  right: auto;
+  left: auto;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after { 
+  display: none;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  width: 34px;
+  height: 34px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 15px -3px rgba(0, 0, 0, 0.14);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 26%;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-next::before, .swiper-button-prev::before {
+  content: "";
+  width: 12px;
+  height: 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.swiper-button-prev::before { 
+  background-image: url("../images/icons/arrow-left.svg");
+}
+
+.swiper-button-next::before { 
+  background-image: url("../images/icons/arrow-right.svg");
+}
+.pagination-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+@media (min-width: 1200px) { 
+  .swiper-button-next, .swiper-button-prev {
+    width: 48px;
+    height: 48px;
+    bottom: 37%;
+  }
+  .swiper-button-next::before, .swiper-button-prev::before {
+    width: 18px;
+    height: 14px;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    top: 95px;
+  }
+  .swiper-button-prev {
+    left: -40px;
+  }
+  .swiper-button-next {
+    right: -40px;
+  }
+}

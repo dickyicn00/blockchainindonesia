@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: Inter;
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+    /* Reserve space for header */
+    scroll-padding-top: 80px;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* Navbar  */
+.nav-menu {
+  @apply ml-0 mb-2 md:mb-0 md:ml-auto flex flex-col md:flex-row gap-x-[27px];
+}
+.nav-menu-item {
+  @apply mb-2;
+}
+.nav-menu-item-link {
+  @apply transition duration-500 ease-in-out font-medium hover:text-[#8d36fe];
+}
+.nav-menu-item-link.active {
+  @apply text-[#8d36fe];
+}
+
+/* Menu wrapper */
+.menu-wrapper {
+  @apply -translate-y-full transition duration-500 ease-in-out opacity-0 px-4 pb-4 md:pb-0 md:px-0 flex-grow absolute top-[100%] left-0 right-0 bg-white border-b md:relative md:opacity-100 md:border-b-0 md:translate-y-0;
+}
+.menu-wrapper.open {
+  @apply opacity-100 translate-y-0;
+}
+
+/* Button  */
+.btn {
+  @apply inline-block font-bold text-center text-white text-xs md:text-sm py-3 px-4 md:p-4 bg-black rounded-[56px];
+}
+.btn-gradient {
+  background: linear-gradient(90deg, #0092FC 0%, #B61CFF 100%);
+}
+.btn-arrow::after {
+  @apply pl-1;
+  content: url("../images/icons/right-arrow.svg");
+}
+
+.container {
+  @apply px-4
+}
+
+/* Welcome heeading */
+.welcome-heading {
+  @apply text-[40px] lg:text-[72px] lg:leading-[89px] lg:tracking-[0.055em] font-black break-words; 
+  background: linear-gradient(90deg, #0092FC 0%, #B61CFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+p {
+  @apply text-[14px] md:text-[16px]
+}
+
+
+.about-content-wrap p {
+  @apply text-gray-600 mb-4 leading-[29px];
+}
+
+.offer-item {
+  @apply p-6 transform transition-all shadow-none	hover:shadow-box;
+}
+
+.offer-item-title {
+  @apply font-bold text-[20px] my-[8px];
+}
+
+.offer-item-desc {
+  @apply text-gray-600 mb-0 leading-[20px];
+}
+
+.offer-item-icon-wrap {
+  @apply inline-flex items-center justify-center w-[40px] h-[40px] bg-[#E9EFFF] rounded-[4px];
+}
+
+.card-work {
+  @apply bg-white p-6 rounded text-gray-600;
+}
+
+.quick-menu-item {
+  @apply mb-1 last:mb-0;
+}
+
+.quick-menu-link {
+  @apply transition-all text-sm text-gray-600 hover:text-[#8d36fe];
+}
+
+.map-item-image {
+  @apply w-[150px] h-[150px] object-cover rounded-md;
+}
+
+.map-tooltip {
+  @apply absolute bg-[url('../images/shape/map-icon.svg')] cursor-pointer w-[35px] h-[35px] bg-no-repeat bg-center bg-contain	inline-block;
+}
